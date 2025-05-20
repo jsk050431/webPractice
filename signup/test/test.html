@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox 연습 예제</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+
+      h2 {
+        margin-top: 60px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      /* 공통 스타일 */
+      .box {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+
+      .box div {
+        background-color: #d0eaff;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+      /* 가로 정렬 */
+      .horizontal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+      }
+
+      /* 정중앙 배치 */
+      .center-outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-color: #fdf5e6;
+      }
+
+      .center-inner {
+        background-color: #ffddaa;
+        padding: 20px 40px;
+        border-radius: 8px;
+      }
+
+      /* 3등분 레이아웃 */
+      .three-cols {
+        display: flex;
+      }
+
+      .three-cols > div {
+        flex: 1;
+        padding: 20px;
+        margin: 0 5px;
+        background-color: #e0ffe0;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. 기본 가로 정렬</h2>
+    <div class="box horizontal">
+      <div>메뉴 1</div>
+      <div>메뉴 2</div>
+      <div>메뉴 3</div>
+    </div>
+
+    <h2>2. 정중앙 배치</h2>
+    <div class="box center-outer">
+      <div class="center-inner">Centered!</div>
+    </div>
+
+    <h2>3. 반응형 3등분 레이아웃</h2>
+    <div class="box three-cols">
+      <div>1번 영역</div>
+      <div>2번 영역</div>
+      <div>3번 영역</div>
+    </div>
+  </body>
+</html>
