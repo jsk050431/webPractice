@@ -1,6 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 form {
-    max-width: 400px;
-    margin: 0 auto;
+    width: 400px;
+    /* background-color: powderblue; */
 }
 
 fieldset {
@@ -14,7 +19,6 @@ fieldset {
 .form-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
 }
 
@@ -25,11 +29,10 @@ fieldset {
 
 .form-row input[type="text"],
 .form-row input[type="password"] {
-    flex-grow: 1;
+    flex: 1;
 }
 
-.gender-options {   
+.gender-options {
     display: flex;
     gap: 10px;
-    align-items: center;
 }

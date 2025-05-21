@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>회원가입</legend>
+
+        <div class="container">
+          <div class="form-row">
+            <label for="username">이름</label>
+            <input id="username" type="text" name="username" />
+          </div>
+
+          <div class="form-row">
+            <span>성별</span>
+            <div class="gender-options">
+              <input id="man" type="radio" name="gender" value="m" />
+              <label for="man">남자</label>
+              <input id="woman" type="radio" name="gender" value="w" />
+              <label for="woman">여자</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="id">아이디</label>
+            <input id="id" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="password">비밀번호</label>
+            <input id="password" type="password" name="password" />
+          </div>
+
+          <div class="form-row">
+            <label for="password_confirm">비밀번호 확인</label>
+            <input id="password_confirm" type="password" name="password" />
+          </div>
+
+          <input id="submit" type="submit" value="가입" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

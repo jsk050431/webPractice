@@ -1,0 +1,43 @@
+form {
+    display: flex;
+    justify-content: center;
+}
+
+label,
+span {
+    min-width: 100px;
+    /* background-color: gray; */
+}
+
+fieldset {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    /* background-color: lightgray; */
+}
+
+.form-row input[type="text"],
+.form-row input[type="password"] {
+    flex: 1;
+}
+
+#submit {
+    align-self: flex-end;
+    width: 60px;
+}
